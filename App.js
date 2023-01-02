@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
 
 /// Assignment 1- part a -- JS to manipulate DOM
         // const heading1 =document.createElement("h1");
