@@ -1,4 +1,4 @@
-.bgcolorset{
+/* .bgcolorset{
     background-color: green;
 }
 
@@ -37,11 +37,45 @@
     transition:.5s ease-in;
     border:2px solid rgb(87, 35, 198);
 }
+*/
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
+ /* @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
       display: block;
     }
+  }  */
+
+  .header{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    border: 1px solid black;
   }
+  .nav-items > ul {
+list-style-type: none;
+display: flex;
+  }
+
+  .nav-items > ul > li {
+    padding: 10px;
+      }
+
+      .logo{
+        width: 120px;
+        height: 120px;
+      }
+      .card{
+        width: 200px;
+        height: 430px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .card > img {
+        width: 100%;
+      }
+      .returantlist{
+        display: flex;
+        flex-wrap: wrap;
+      }
