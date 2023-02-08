@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 const TitleComponent = () => (
     <a href="/"><img 
@@ -9,6 +10,7 @@ const TitleComponent = () => (
 
   const HeaderComponent =() => {
 
+    const [IsVisible,setIsvisible]=useState(false);
     return (
       <div className="header">
         <TitleComponent/>
@@ -20,6 +22,7 @@ const TitleComponent = () => (
             <li>Cart</li>
           </ul>
         </div>
+        { IsVisible === false? <button className="btn-login" onClick={() =>setIsvisible(true)}>Login</button> : <button onClick={() =>setIsvisible(false)} className="btn-login">Logout</button> }
       </div>
     );
   
